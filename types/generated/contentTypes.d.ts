@@ -841,12 +841,6 @@ export interface ApiPostPost extends Schema.CollectionType {
     };
   };
   attributes: {
-    directorscut: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     date: Attribute.Date &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -862,13 +856,6 @@ export interface ApiPostPost extends Schema.CollectionType {
         };
       }>;
     thumbnail: Attribute.Media &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    oembed: Attribute.Text &
-      Attribute.CustomField<'plugin::oembed.oembed'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -944,6 +931,21 @@ export interface ApiPostPost extends Schema.CollectionType {
         };
       }>;
     socialLinks: Attribute.Blocks &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    projectDetail: Attribute.DynamicZone<
+      [
+        'discription.cor-images',
+        'discription.de-text',
+        'discription.1-grid-images',
+        'discription.2-grid-images',
+        'discription.3-grid-images',
+        'discription.4-grid-images'
+      ]
+    > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_de_text_cor_images",
+  "info": {
+    "displayName": "Cor-Images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CoroucelImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

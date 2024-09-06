@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_discription_4_grid_images",
+  "info": {
+    "displayName": "4-Grid-Images"
+  },
+  "options": {},
+  "attributes": {
+    "FourGridImages": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

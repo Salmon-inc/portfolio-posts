@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_discription_3_grid_images",
+  "info": {
+    "displayName": "3-Grid-Images"
+  },
+  "options": {},
+  "attributes": {
+    "ThreeGridImages": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

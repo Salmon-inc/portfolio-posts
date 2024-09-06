@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_de_text_de_texts",
+  "info": {
+    "displayName": "Description",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Discription": {
+      "type": "blocks"
+    }
+  }
+}

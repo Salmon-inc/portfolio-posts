@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_discription_1_grid_images",
+  "info": {
+    "displayName": "1-Grid-Images",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "OneGridImages": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

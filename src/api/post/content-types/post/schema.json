@@ -16,22 +16,6 @@
     }
   },
   "attributes": {
-    "directorscut": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "date": {
       "pluginOptions": {
         "i18n": {
@@ -62,15 +46,6 @@
           "localized": true
         }
       }
-    },
-    "oembed": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "customField",
-      "customField": "plugin::oembed.oembed"
     },
     "tags": {
       "type": "relation",
@@ -174,6 +149,22 @@
       },
       "type": "blocks",
       "required": false
+    },
+    "projectDetail": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "discription.cor-images",
+        "discription.de-text",
+        "discription.1-grid-images",
+        "discription.2-grid-images",
+        "discription.3-grid-images",
+        "discription.4-grid-images"
+      ]
     }
   }
 }
