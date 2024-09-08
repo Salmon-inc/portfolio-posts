@@ -842,6 +842,7 @@ export interface ApiPostPost extends Schema.CollectionType {
   };
   attributes: {
     date: Attribute.Date &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -856,6 +857,7 @@ export interface ApiPostPost extends Schema.CollectionType {
         };
       }>;
     thumbnail: Attribute.Media &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -875,19 +877,8 @@ export interface ApiPostPost extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    creditlist: Attribute.Blocks &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     embed: Attribute.Blocks &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    detail: Attribute.Blocks &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -924,13 +915,8 @@ export interface ApiPostPost extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<false>;
-    writeCategory: Attribute.Blocks &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     socialLinks: Attribute.Blocks &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -950,6 +936,16 @@ export interface ApiPostPost extends Schema.CollectionType {
         i18n: {
           localized: true;
         };
+      }>;
+    OriginalCategory: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Attribute.SetMinMaxLength<{
+        maxLength: 25;
       }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
