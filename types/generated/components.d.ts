@@ -65,6 +65,16 @@ export interface DiscriptionDeText extends Schema.Component {
   };
 }
 
+export interface DiscriptionEmbed extends Schema.Component {
+  collectionName: 'components_discription_embeds';
+  info: {
+    displayName: 'embed';
+  };
+  attributes: {
+    embed: Attribute.Blocks;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -74,6 +84,7 @@ declare module '@strapi/types' {
       'discription.4-grid-images': Discription4GridImages;
       'discription.cor-images': DiscriptionCorImages;
       'discription.de-text': DiscriptionDeText;
+      'discription.embed': DiscriptionEmbed;
     }
   }
 }

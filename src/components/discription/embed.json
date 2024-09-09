@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_discription_embeds",
+  "info": {
+    "displayName": "embed"
+  },
+  "options": {},
+  "attributes": {
+    "embed": {
+      "type": "blocks"
+    }
+  }
+}

@@ -929,7 +929,8 @@ export interface ApiPostPost extends Schema.CollectionType {
         'discription.1-grid-images',
         'discription.2-grid-images',
         'discription.3-grid-images',
-        'discription.4-grid-images'
+        'discription.4-grid-images',
+        'discription.embed'
       ]
     > &
       Attribute.SetPluginOptions<{
